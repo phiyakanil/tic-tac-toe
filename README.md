@@ -1,37 +1,56 @@
-
-![Tic Tac Toe](https://github.com/catherineisonline/tic-tac-toe/blob/main/src/assets/images/project-preview.png?raw=true)
-# Tic Tac Toe
-
-
-[Tic Tac Toe](https://catherineisonline.github.io/tic-tac-toe/) game, a classic game for two players where each player takes turns marking a grid of 3x3 squares with their X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game. It is also known as Noughts and Crosses or Xs and Os. The game is implemented using React and CSS
-
-## Game rules
-
-1. The game is played on a grid that is 3 squares by 3 squares
-2. You are X, your friend is O. Players take turns putting their marks in empty squares
-3. The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner
-4. When all 9 squares are full, the game is over
-
-## Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
+ANIL TESTING THE INGESTION MADE THIS CHANGES
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+Run the following command to verify if Yarn is installed globally:
+
+bash
+Copy code
+which yarn
+If no output is shown, Yarn is not installed, and you'll need to install it.
+If a path is shown but the command still fails, it could indicate a PATH issue.
+2. Install Yarn
+If Yarn is not installed, install it using one of the following methods:
+
+a) Using npm:
+If you have Node.js installed, use npm to install Yarn globally:
+
+bash
+Copy code
+npm install -g yarn
+b) Using Homebrew (macOS):
+If you're on macOS and have Homebrew, you can install Yarn:
+
+bash
+Copy code
+brew install yarn
+3. Add Yarn to PATH
+If Yarn is already installed but not available in your terminal, ensure it's added to your PATH.
+
+a) Locate Yarn's Path:
+Run:
+
+bash
+Copy code
+find / -name yarn 2>/dev/null
+Look for the executable path (e.g., /usr/local/bin/yarn or ~/.yarn/bin/yarn).
+
+b) Add to PATH:
+Edit your ~/.zshrc file:
+
+bash
+Copy code
+nano ~/.zshrc
+Add the following line:
+
+bash
+Copy code
+export PATH="$PATH:~/.yarn/bin:~/.config/yarn/global/node_modules/.bin"
+Save the file and reload your terminal configuration:
+
+bash
+Copy code
+source ~/.zshrc
 
 ### `npm run build`
 
